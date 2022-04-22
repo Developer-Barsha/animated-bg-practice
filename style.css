@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}.scene{
+}
+
+.scene{
     position: relative;
     height: 100vh;
     background: linear-gradient(#a6d8ff,#fff,#fff);
     overflow-x: hidden;
 }
+
 .dark .scene{
     background: #222833;
 }
+
 .sun{
     position: absolute;
     top: 100px;
@@ -24,10 +28,12 @@
     cursor: pointer;
     transition: 0.2s;
 }
+
 .dark .sun{  
     left: 45%;
     box-shadow: 0 0 0 #fff;
 }
+
 .dark .sun::before{
     content: '';
     position: absolute;
@@ -38,6 +44,7 @@
     background:#222833;
     border-radius: 50%;
 }
+
 .bg{
     position: absolute;
     bottom: 0;
@@ -48,6 +55,7 @@
     background-size: 1500px;
     background-repeat: repeat-x;
 }
+
 @keyframes animatebg{
     0%{
         background-position-x: 0px;
@@ -56,6 +64,7 @@
         background-position-x: -1500px;
     }
 }
+
 .car1{
     position: absolute;
     left: -200px;
@@ -64,6 +73,7 @@
     z-index: 10;
     animation: car1 18s linear infinite;
 }
+
 @keyframes car1{
     0%{
         transform: translateX(0px);
@@ -81,6 +91,7 @@
     z-index: 9;
     animation: car2 12s linear infinite;
 }
+
 @keyframes car2{
     0%{
         transform: translateX(0px) rotateY(180deg);
