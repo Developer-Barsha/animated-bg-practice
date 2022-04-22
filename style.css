@@ -18,9 +18,9 @@
     transform: translateX(-50%);
     width: 100px;
     height: 100px;
-    background: linear-gradient(red, orange,yellow, green, blue, purple);
+    background: white;
     border-radius: 50%;
-    box-shadow: 0 0 50px #fff;
+    box-shadow: 0 0 50px yellow;
     cursor: pointer;
     transition: 0.2s;
 }
